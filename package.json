@@ -1,0 +1,68 @@
+{
+  "name": "darty-react-app",
+  "description": "Darty React App",
+  "keywords": [
+    "typescript",
+    "react",
+    "hooks",
+    "spa",
+    "boilerplate",
+    "starter"
+  ],
+  "version": "0.10.6",
+  "homepage": "https://dartyreactapp.herokuapp.com/",
+  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",
+  "contributors": [
+    {
+      "name": "Eser Ozvataf",
+      "email": "eser@ozvataf.com",
+      "url": "http://eser.ozvataf.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eserozvataf/darty-react-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eserozvataf/darty-react-app/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "scripts": {
+    "cleanup": "rm -rf yarn.lock node_modules/ dist/",
+    "start": "darty start",
+    "dev": "darty dev",
+    "extract": "darty extract",
+    "test": "darty test",
+    "test:coverage": "darty test:coverage",
+    "bundle": "darty bundle",
+    "bundle:prod": "darty bundle:prod",
+    "containerize": "darty containerize",
+    ":postinstall": "semantic-ui-css-patch",
+    "postinstall": "node -e \"require('@eserozvataf/semantic-ui-react-css-patch/src/index.js').run();\""
+  },
+  "devDependencies": {
+    "@eserozvataf/semantic-ui-react-css-patch": "^1.0.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/dom": "^8.16.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.3.0",
+    "@types/jest": "^28.1.6",
+    "@types/react": "^18.0.15",
+    "@types/react-router": "^5.1.18",
+    "fomantic-ui-less": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.18.7",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "semantic-ui-react": "^2.1.3"
+  }
+}
